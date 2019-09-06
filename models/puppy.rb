@@ -1,5 +1,5 @@
 
-class Puppies
+class Puppy
   attr_accessor :name, :breed, :age
 
   def initialize(info_hash)
