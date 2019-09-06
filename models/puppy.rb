@@ -1,10 +1,8 @@
 
 class Puppies
-  attr_accessor :name, :breed, :months_old
+  attr_accessor :name, :breed, :age
 
-  def initialize(name, breed, months_old)
-    @name = name
-    @breed = breed
-    @months_old = months_old
+  def initialize(info_hash)
+  	info_hash.each{|key, value| self.send(("#{key}="), value)}
   end
 end
